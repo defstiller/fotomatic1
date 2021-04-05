@@ -41,12 +41,14 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 100;
 }
 
 header .content {
   display: flex;
   align-items: center;
   padding: 1.875rem;
+  font-size: x-large;
 }
 
 header .logo {
@@ -66,10 +68,11 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
+  font-size: large;
 }
 
 header .icon {
-  width: 1rem;
+  width: 1.3rem;
   padding-left: .75rem;
 }
 
@@ -113,13 +116,21 @@ header .mobile {
 /* Sign Up Section */
 
 #sign-up-section {
+  position:relative;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
 }
 
+#signUpImg {
+  width: 100%;
+  position: absolute;
+  top: -20%;
+}
+
 #sign-up-cta {
+  position: absolute;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
