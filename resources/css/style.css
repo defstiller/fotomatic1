@@ -232,15 +232,16 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+  width: 45%;
 }
 
-.feature .image-container {
-  width: 90%;
-  height: 65%;
-  margin: 0 auto;
+.feature .image-container>img {
+  width: 100%;
+  height: 100%;
 }
 
 .feature h2 {
+  padding-top: 2rem;
   padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
@@ -249,7 +250,7 @@ header .mobile {
 
 .feature h3 {
   font-size: 1rem;
-  line-height: 1.2;
+  line-height: 2.2;
   font-weight: 300;
   color: #4a4a4a;
 }
@@ -284,11 +285,13 @@ header .mobile {
 #filters-section {
   padding: 4rem 0;
   background-color: #4a4a4a;
+  max-width: 100%;
 }
 
 #filters-section .content {
   padding: 0 .625rem;
   margin-bottom: 5rem;
+  max-width: 100%;
 }
 
 #filters-section .content h2 {
@@ -305,8 +308,14 @@ header .mobile {
 }
 
 #filters-section .images-container {
-  max-width: 100%;
+  display: inline-flex;
   padding: 0 1%;
+  margin-left: 0.2rem;
+}
+#filters-section .image-container>img {
+  width: 100%;
+  height:100%;
+  justify-content: space-around;
 }
 
 @media only screen and (max-width: 760px) {
